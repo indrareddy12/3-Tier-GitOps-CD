@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: adityajaiswal.com
+  - host: indra.com
     http:
       paths:
       - path: /api
@@ -33,5 +33,5 @@ spec:
         backend:
           service: { name: frontend-svc, port: { number: 80 } }
   tls:
-  - hosts: [adityajaiswal.com, www.adityajaiswal.com]
-    secretName: adityajaiswal-com-tls   # <-- consistent, .com
+  - hosts: [indra.com, www.indra.com]
+    secretName: indra-com-tls   # <-- consistent, .com
